@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Calculadora en Servlet</title>
+<link rel="stylesheet" href="susy-master/docs/assets/webpack/app_styles.min.css">
+  
+  <script src="susy-master/docs/assets/webpack/app.min.js"></script>
+  <script src="susy-master/docs/assets/webpack/common.min.js"></script>
+  <script src="susy-master/docs/assets/webpack/runtime.min.js"></script>
+  <script src="susy-master/docs/assets/webpack/search.min.js"></script>
+</head>
+<body BGCOLOR="#E0FFE0" TEXT="green" LINK="blue" VLINK="brown">
+    <CENTER>
+		<HR style="color:green; heigth:6px; width:500">
+		<FONT size=5 style="font-size: 40px">CALCULADORA</FONT>
+		<HR style = "color:green; heigth:6px; width:500">
+		<BR>
+		<BR>
+		<FORM action="CalculadoraServlet" method="POST">
+		    <TABLE border="3" WIDTH="400">
+			<TR>
+				<TD align="rigth">
+				<INPUT name="operando1" type="text">
+			</TD>
+			<TD>
+				<SELECT name="operacion">
+					<OPTION value="1" selected>&nbsp;&nbsp;+&nbsp;</OPTION>
+					<OPTION value="2">&nbsp;&nbsp;-&nbsp;&nbsp;</OPTION>
+					<OPTION value="3">&nbsp;&nbsp;*&nbsp;&nbsp;</OPTION>
+					<OPTION value="4">&nbsp;&nbsp;/&nbsp;&nbsp;</OPTION>
+				</SELECT>
+			</TD>
+			<TD align="rigth">
+			<INPUT name="operando2" type="text">
+			</TD>
+		 </TR>
+		</TABLE>
+		<br>
+		<br>
+		<input name="Calcular" value="Calcular" type="submit">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input name="limpiar" value="Limpiar" type="reset">
+		</FORM>
+	</CENTER>
+</body>
+</html>
